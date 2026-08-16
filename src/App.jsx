@@ -8,6 +8,7 @@ import Businesses from './pages/Businesses';
 import CustomerQueue from './pages/CustomerQueue';
 import StaffDashboard from './pages/StaffDashboard';
 import NotFound from './pages/NotFound';
+import Settings from './pages/Settings';
 
 export default function App() {
   return (
@@ -39,6 +40,14 @@ export default function App() {
             element={
               <ProtectedRoute roles={['owner', 'staff']}>
                 <StaffDashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/settings"
+            element={
+              <ProtectedRoute>
+                <Settings />
               </ProtectedRoute>
             }
           />

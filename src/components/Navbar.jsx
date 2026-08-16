@@ -27,6 +27,7 @@ export default function Navbar() {
               {(user.role === 'owner' || user.role === 'staff') && (
                 <NavLink to="/staff" className={navClass}>Staff</NavLink>
               )}
+              <NavLink to="/settings" className={navClass}>Settings</NavLink>
               <button
                 onClick={handleLogout}
                 className="rounded-lg border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"

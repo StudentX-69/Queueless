@@ -48,7 +48,15 @@ export function AuthProvider({ children }) {
     setUser(null);
   }
 
-  const value = useMemo(() => ({ user, loading, login, register, logout }), [user, loading]);
+  const deleteAccount = async (password) => {
+  await api.delete('/auth/me', { data: { password } });
+  logout();
+};
+
+const value = useMemo(
+  () => ({ user, loading, login, register, logout, deleteAccount }),
+  [user, loading],
+);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }

@@ -1,5 +1,80 @@
-# QueueLess — Frontend
+# QueueLess
 
+QueueLess is a MERN-stack real-time queue management system. Customers can join a queue, receive a token, monitor their position, and hear an alert when their token is called. Staff can manage the live queue from a dashboard.
+
+## Features
+
+For Customers
+• Live Queue Tracking: See exactly who is currently being served and how many people are ahead in the queue.
+
+• Remote Join: Join a queue virtually without having to be physically present at the venue.
+
+• Real-time Alerts: Receive notifications (e.g., "🔔 Your turn is approaching") when it's almost time to be served.
+
+For Staff & Businesses
+• Staff Dashboard: A dedicated operations hub to manage businesses and queues.
+
+• Multi-Business Support: Create and manage multiple businesses (e.g., City Care Clinic, Momoland) from a single account.
+
+• Queue Generation: Create specific queues (e.g., "General Queue") under each business and manually or automatically move customers through it in real-time.
+
+📸 Screenshots
+1. Landing Page
+  ![Landing Page](<Screenshot 2026-07-31 230844-1.png>)
+
+2. Live Customer Queue
+  ![Live Customer Queue](<Screenshot 2026-07-31 231059.png>)
+
+3. Staff Dashboard
+   ![Staff Dashboard](<Screenshot 2026-07-31 231121.png>)
+## Project structure
+
+```text
+queueless/
+├── client/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── utils/
+│   └── ...
+├── server/
+│   ├── src/
+│   │   ├── config/
+│   │   ├── controllers/
+│   │   ├── middleware/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── sockets/
+│   │   └── utils/
+│   └── ...
+├── package.json
+└── README.md
+```
+
+## Tech stack
+
+### Frontend
+- React
+- Vite
+- React Router
+- Axios
+- Socket.IO Client
+- Tailwind CSS
+
+### Backend
+- Node.js
+- Express
+- MongoDB + Mongoose
+- JSON Web Token
+- bcryptjs
+- Socket.IO
+- Helmet
+- CORS
+- Morgan
+
+# QueueLess — Frontend
 React + Vite + Tailwind client for QueueLess. This folder is a **standalone
 deployable static site** — it does not depend on the backend folder at all,
 it just needs to know the backend's URL.

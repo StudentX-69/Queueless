@@ -3,7 +3,14 @@
 QueueLess is a MERN-stack real-time queue management system. Customers can join a queue, receive a token, monitor their position, and hear an alert when their token is called. Staff can manage the live queue from a dashboard.
 
 ## Features
-
+- Customer token generation
+- Live queue tracking
+- Business dashboard
+- Authentication
+- Queue management
+- Notifications
+- Responsive UI
+  
 For Customers
 • Live Queue Tracking: See exactly who is currently being served and how many people are ahead in the queue.
 

@@ -12,6 +12,7 @@ QueueLess is a MERN-stack real-time queue management system. Customers can join 
 - Responsive UI
   
 For Customers
+
 • Live Queue Tracking: See exactly who is currently being served and how many people are ahead in the queue.
 
 • Remote Join: Join a queue virtually without having to be physically present at the venue.

@@ -20,6 +20,7 @@ For Customers
 • Real-time Alerts: Receive notifications (e.g., "🔔 Your turn is approaching") when it's almost time to be served.
 
 For Staff & Businesses
+
 • Staff Dashboard: A dedicated operations hub to manage businesses and queues.
 
 • Multi-Business Support: Create and manage multiple businesses (e.g., City Care Clinic, Momoland) from a single account.
